@@ -11,14 +11,14 @@ class URL(BaseModel):
 
 
 def main():
-    st.title("Down")
+    st.title("Baixar")
     st.markdown("""
     Baixe vídeos do Youtube de maneira gratuita! Feito por [@omadson](https://github.com/omadson).
     """)
     data = sp.pydantic_form(
         key="first",
         model=URL,
-        submit_label="Download",
+        submit_label="Baixar",
         lowercase_labels=True
     )
 
